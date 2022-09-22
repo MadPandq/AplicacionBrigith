@@ -13,6 +13,12 @@ public class InicioPantallaActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        try {
+            Thread.sleep(1200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        setTheme(R.style.Theme_AplicacionBrigith);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_pantalla);
 
