@@ -14,13 +14,22 @@
         android:theme="@style/Theme.AplicacionBrigith"
         tools:targetApi="31">
         <activity
-            android:name=".ZhongliActivity"
+            android:name=".ChaseDoos"
             android:exported="false" />
         <activity
-            android:name=".VentiActivity"
+            android:name=".ChaseUnoo"
             android:exported="false" />
         <activity
-            android:name=".RaidenActivity"
+            android:name=".TheDoos"
+            android:exported="false" />
+        <activity
+            android:name=".TheUnoo"
+            android:exported="false" />
+        <activity
+            android:name=".ArticDoos"
+            android:exported="false" />
+        <activity
+            android:name=".ArticUnoo"
             android:exported="false" />
         <activity
             android:name=".InicioPantallaActivity"
