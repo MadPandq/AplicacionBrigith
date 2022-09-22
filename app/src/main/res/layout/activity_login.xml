@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    android:padding="25dp"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a MadKat"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:transitionName="textTrans"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Inicia Sesion para continuar"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/usuarioNombre"
+        android:hint="Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/usuarioContraseña"
+            android:hint="Contraseña"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="17dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Olvidaste tu contraseña?" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btniniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INICIAR SESIÓN"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"/>
+
+        <TextView
+            android:id="@+id/textoRegistrarse"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:text="No tienes Cuenta? Regístrate" />
+    </LinearLayout>
+
+</LinearLayout>
